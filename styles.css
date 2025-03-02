@@ -1,0 +1,179 @@
+/* styles.css */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('C:/Users/rohit/Desktop/Language demo/websie_bg.png'); /* Image file in the same folder */
+    background-size: cover; /* Cover the entire screen */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* No repeating */
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+#speechToTextButton i {
+    font-size: 20px;
+}
+
+.container {
+    width: auto;
+    max-width: 800px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+h1 {
+    color: #000000;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #000000;
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+h2, select, textarea, button, pre {
+    margin-bottom: 10px;
+}
+
+/* Center the language select dropdown */
+#targetLanguage {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Input text area for manual text */
+textarea {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Buttons */
+button {
+    display: flex;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #2727277d;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+/* Text display areas */
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 16px;
+    color: #2f2f2f;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+/* Image preview container */
+#imagePreviewContainer {
+    text-align: center;
+}
+
+#imagePreview {
+    display: none;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Flexbox for translated text and speak button */
+.translated-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Style for the icon button */
+#speakTranslatedTextButton {
+    background-color: #969696;
+    padding: 0.1px;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#speakTranslatedTextButton:hover {
+    background-color: #000000;
+}
+
+#speakTranslatedTextButton i {
+    font-size: 20px;
+}
+
+/* Ensuring responsiveness */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    #targetLanguage {
+        width: 80%;
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    pre {
+        font-size: 14px;
+    }
+
+    #speakTranslatedTextButton {
+        font-size: 20px;
+        padding: 10px;
+    }
+}
